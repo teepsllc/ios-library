@@ -96,6 +96,9 @@
     } else {
         [self cover];
     }
+    
+    self.navigationController.navigationBar.topItem.title = @"";
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -104,7 +107,7 @@
                                              selector:@selector(messageListUpdated)
                                                  name:UAInboxMessageListUpdatedNotification object:nil];
     
-    self.navigationController.navigationBar.topItem.title = @"";     
+    self.navigationController.navigationBar.topItem.title = @"";
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
