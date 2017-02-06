@@ -104,8 +104,7 @@
                                              selector:@selector(messageListUpdated)
                                                  name:UAInboxMessageListUpdatedNotification object:nil];
     
-    self.navigationController.navigationBar.topItem.title = @""; exit
-    
+    self.navigationController.navigationBar.topItem.title = @"";     
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
