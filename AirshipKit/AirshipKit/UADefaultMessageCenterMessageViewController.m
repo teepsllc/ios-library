@@ -103,6 +103,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(messageListUpdated)
                                                  name:UAInboxMessageListUpdatedNotification object:nil];
+    
+    self.navigationController.navigationBar.topItem.title = @""; exit
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
